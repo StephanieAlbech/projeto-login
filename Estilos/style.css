@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*Paleta de cores:
+    branco
+    rosa .Synthwave-12-1-hex { color: #D94A64; }
+    rosa claro.Synthwave-12-2-hex { color: #A65866; }
+    azul escuro.Synthwave-12-3-hex { color: #151426; }
+    azul claro.Synthwave-12-4-hex { color: #85A6A6; }
+    beje.Synthwave-12-5-hex { color: #F2DFCE; }
+
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #D94A64;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: #F2DFCE;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+
+}
+
+section#login > div#imagem{
+    display: block;
+    background: #D94A64 url(../Imagens/pexels-wilddaisy278-19938739.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
