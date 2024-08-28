@@ -31,17 +31,16 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
     background-color: #F2DFCE;
     width: 250px;
-    height: 500px;
+    height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
-
+    transform: translate(-50%, -50%);
+    
 }
 
 section#login > div#imagem{
@@ -56,4 +55,94 @@ section#login > div#imagem{
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #D94A64;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px 5px 0px ;
+    border: 2px solid #D94A64;
+
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+
+#icon{
+    color: #f7d0d7;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #ffb8c5;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    float: right;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+
+
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #f798aa;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #D94A64;
+    transition: 0.5s;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #ffe3e8;
+    border-radius: 5px;
+    border: 1.1px solid rgb(229, 142, 157);
+    text-decoration: none;
+    color: rgb(255, 43, 61);
+}
+
+form > a.botao:hover{
+    background-color: #ff98a9;
+    transition: 0.5s;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
 }

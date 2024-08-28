@@ -8,6 +8,7 @@
 
     section#login{
         width: 90vw;
+        height: 280px;
         
     }
 
@@ -23,6 +24,7 @@
         width: 65%;
         
     }
+
 }
 @media screen and (min-width: 992px){
     body{
@@ -31,22 +33,36 @@
     
     section#login{
         width: 950px;
+        height: 360px;
 
     }
     
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
-        border-radius: 20px 0px 0px 20px;
-        margin-right: 20px;
+        border-radius: 0px 20px 20px 0px;
+        margin-left: 10px;
+     
     }
 
     section#login > div#formuario{
-        float: right;
+        float: left;
         width: 50%;
       
         
         
+    }
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+        margin: 20px 0px;
+    }
+
+    form {
+        width: 450px;
     }
 }
